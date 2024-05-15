@@ -2,14 +2,17 @@
 - name: My first playbook
   hosts: all
   become: yes
+  gather_facts: yes
 
   tasks:
     - name: I want to install webserver
       apt:
         name: apache2
         state: present
+      when: ansible_os_family=="Debian"
 
     - name: I want to run webserver
       service:
         name: apache2
         state: started
+      when: ansible_os_family=="Debian"
