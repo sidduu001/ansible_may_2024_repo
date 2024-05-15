@@ -12,4 +12,4 @@
     - name: I want to run webserver
       service:
         name: apache2
-        statw: started
+        state: started
