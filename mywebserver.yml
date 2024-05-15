@@ -1,0 +1,15 @@
+---
+- name: My first playbook
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: I want to install webserver
+      apt:
+        name: apache2
+        state: present
+
+    - name: I want to run webserver
+      service:
+        name: apache2
+        statw: started
