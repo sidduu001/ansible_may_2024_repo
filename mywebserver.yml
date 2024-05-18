@@ -7,25 +7,25 @@
   tasks:
     - name: I want to install webserver
       apt:
-        name: "{mywebpackonubuntu}"
+        name: "{{mywebpackonubuntu}}"
         state: present
       when: ansible_os_family=="Debian"
 
     - name: I want to run webserver
       service:
-        name: "{mywebpackonubuntu}"
+        name: "{{mywebpackonubuntu}}"
         state: started
       when: ansible_os_family=="Debian"
     
     - name: I want to install other server
       dnf:
-        name: "{mywebpackonredhat}"
+        name: "{{mywebpackonredhat}}"
         state: present
       when: ansible_os_family=="RedHat"
 
     - name: I want to run other server
       service:
-        name: "{mywebpackonredhat}"
+        name: "{{mywebpackonredhat}}"
         state: started
       when: ansible_os_family=="RedHat"
 
