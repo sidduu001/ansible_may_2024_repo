@@ -1,0 +1,9 @@
+---
+- hosts: 172.31.30.119
+  tasks:
+  - include_tasks: myfile.yml
+  
+  - name: install webserver
+    apt:
+      name: apache2
+      state: present
