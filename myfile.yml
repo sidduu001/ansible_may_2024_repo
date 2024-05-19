@@ -1,6 +1,5 @@
 ---
-- tasks:
-  - name: create a new file
-    file:
-      path: /home/ubuntu/mytest
-      state: touch
+- name: create a new file
+  file:
+    path: /home/ubuntu/mytest
+    state: touch
