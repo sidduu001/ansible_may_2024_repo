@@ -19,6 +19,12 @@
       src: index.j2
       dest: /var/www/html/index.html
     notify: restartwebserver
+
+  - name: I want to download tomcat.
+    get_url:
+      url: https://archive.apache.org/dist/tomcat/tomcat-10/v10.0.0-M1/bin/apache-tomcat-10.0.0-M1-fulldocs.tar.gz
+      dest: /home/ubuntu/apache-tomcat-10.0.0-M1-fulldocs.tar.gz
+      force_basic_auth: yes
   
   handlers:
   - name: restartwebserver
