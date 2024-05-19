@@ -14,3 +14,8 @@
       src: mytestfile
       dest: /home/ubuntu/mytest
 
+  - name: I want to copy indexpage to node side
+    copy:
+      src: index.j2
+      dest: /var/www/html/index.html
+
