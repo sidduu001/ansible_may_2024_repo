@@ -2,6 +2,6 @@
 
 - name: I want to deploy my java app
   get_url:
-    url: https://myjavabucket001.s3.amazonaws.com/Lab6A.war
-    dest: /opt/tomcat/webapps/Lab6A.war
+    url: https://myjavabucket001.s3.amazonaws.com/sample.war
+    dest: /opt/tomcat/webapps/sample.war
     force_basic_auth: yes
