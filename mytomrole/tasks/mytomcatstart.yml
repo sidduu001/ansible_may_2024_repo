@@ -7,6 +7,6 @@
     enabled: true
 
 - name: Allow port 8080 through UFW
-    ufw:
-      rule: allow
-      port: 8080
+  ufw:
+    rule: allow
+    port: 8080
