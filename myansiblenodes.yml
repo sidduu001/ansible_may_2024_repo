@@ -3,14 +3,14 @@
   tasks:
     - name: create ansible node
       ec2:
-          key_name: 18May_2024
-          instance_type: t2.micro
-          image: ami-015757dbe6ff31dbe
-          wait: yes
-          group: launch-wizard-6
-          count: 2
-          vpc_subnet_id: subnet-0be88f9abf756ec77
-          assign_public_ip: yes
-          region: us-east-1
-          instance_tags:
-            name: AnsibleNodes
+        key_name: 18May_2024
+        instance_type: t2.micro
+        image: ami-015757dbe6ff31dbe
+        wait: yes
+        group: launch-wizard-6
+        count: 2
+        vpc_subnet_id: subnet-0be88f9abf756ec77
+        assign_public_ip: yes
+        region: us-east-1
+        instance_tags:
+          name: AnsibleNodes
