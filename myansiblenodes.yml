@@ -1,8 +1,10 @@
 ---
 - hosts: localhost
+  become: yes
+  
   tasks:
     - name: create ansible node
-      community.aws.ec2:
+      ec2:
         key_name: 18May_2024
         instance_type: t2.micro
         image: ami-015757dbe6ff31dbe
