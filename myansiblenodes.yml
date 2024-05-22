@@ -1,8 +1,8 @@
 ---
 - hosts: localhost
   tasks:
-    -   name: create ansible node
-        ec2:
+    - name: create ansible node
+      ec2:
           key_name: 18May_2024
           instance_type: t2.micro
           image: ami-015757dbe6ff31dbe
