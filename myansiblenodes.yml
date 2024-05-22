@@ -3,7 +3,7 @@
   become: yes
   
   tasks:
-        - name: intall httpd
+        - name: create ansible node
           ec2:
               key_name: 18May_2024
               instance_type: t2.micro
